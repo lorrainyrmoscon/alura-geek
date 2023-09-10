@@ -1,0 +1,45 @@
+.promocional {
+    background-image: url(../img/geral/banner-joaninha.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 230px;
+    color: var(--branco);
+    font-family: var(--fonte-raleway);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.promocional__titulo {
+    font-size: 3.3rem;
+    font-weight: bold;
+    padding-bottom: .8rem;
+}
+
+.promocional__descricao {
+    font-size: 1.35rem;
+    padding-bottom: .5rem;
+}
+
+.promocional__botao {
+    text-decoration: none;
+    color: var(--branco);
+    padding: 0.7rem 0.5rem;
+    width: fit-content;
+    background-color: var(--azul);
+    transition: all .8s;
+}
+
+.promocional__botao:hover {
+    background-color: var(--azul-forte);
+}
+
+@media screen and (max-width: 768px) {
+    .promocional__titulo {
+        font-size: 2rem;
+    }
+
+    .promocional__descricao {
+        font-size: 1rem;
+    }
+}

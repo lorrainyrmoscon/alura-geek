@@ -1,0 +1,114 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__logo-e-pesquisa {
+    display: flex;
+    width: 60%;
+}
+
+.cabecalho__pesquisa {
+    border-radius: 15px;
+    width: 40%;
+}
+
+.cabecalho__form {
+    width: 100%;
+    display: flex;
+    padding: 0.3rem 0.4rem;
+    justify-content: space-between;
+    background: var(--cinza-fraco);
+    border-radius: 15px;
+}
+
+.cabecalho__entrada {
+    color: var(--cinza);
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.cabecalho__pesquisar {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.cabecalho__lupa {
+    background-color: transparent;
+    padding: 0;
+}
+
+.cabecalho__login {
+    color: var(--azul);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid var(--azul);
+    padding: 1rem 4rem;
+    transition: all .8s;
+}
+
+.cabecalho__login:hover {
+    color: var(--branco);
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
+
+.cabecalho__pesquisar:hover {
+    cursor: pointer;
+}
+
+.cabecalho__entrada:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho__pesquisa {
+        padding: 0;
+        width: auto;
+        order: 1;
+    }
+
+    .cabecalho__form {
+        width: 1.05rem;
+
+    }
+
+    .cabecalho__entrada {
+        display: none;
+    }
+
+    .cabecalho__logo-e-pesquisa > .logo > .logo__alura {
+        font-size: 1rem
+    }
+
+    .cabecalho__logo-e-pesquisa > .logo > .logo__imagem {
+        width: 20px;
+    }
+
+    .cabecalho__login {
+        font-size: 1rem;
+        padding: .5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cabecalho__logo-e-pesquisa {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__logar {
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__logar {
+        padding-left:10rem;
+    }
+}

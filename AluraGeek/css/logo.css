@@ -1,0 +1,35 @@
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 0;
+}
+
+.logo__imagem {
+    width: 35px;
+    padding: 0 .2rem 0 0;
+}
+
+.logo__alura {
+    color: var(--azul);
+    font-size: 1.5rem;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+}
+
+.logo__geek {
+    color: var(--cinza-forte);
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        align-self: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        padding: 0;
+    }
+}

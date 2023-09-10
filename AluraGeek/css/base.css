@@ -1,0 +1,39 @@
+:root {
+    /*Colors variables*/
+    --azul: #2A7AE4;
+    --azul-fraco: #e5effd;
+    --azul-forte: #2a2de4;
+    --cinza-forte: #464646;
+    --cinza-fraco: #f0f0f0;
+    --branco: #fbfbfb;
+    --background-body: var(--branco);
+    --transparente: #f5f5f5;
+
+    /*Fonts variables*/
+    --fonte-padrao: 'Work Sans', sans-serif;
+    --fonte-raleway: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: var(--background-body);
+}
+
+.principal {
+    background-color: var(--transparente);
+}
+
+.container {
+    padding: 2rem 8%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 2rem 3%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 2rem 4%;
+    }
+}

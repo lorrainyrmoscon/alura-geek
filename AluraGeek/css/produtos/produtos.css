@@ -1,0 +1,34 @@
+.produtos {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos__cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+
+.produtos__subtitulo {
+    color: var(--cinza-forte);
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--fonte-raleway);
+}
+
+.produtos__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.produtos__ver-tudo {
+    padding-right: .8rem;
+    color: var(--azul);
+    font-family: var(--fonte-padrao);
+}
+
+.produtos__ver-tudo:hover {
+    transition: all .8s;
+    font-size: 1.1rem;
+}

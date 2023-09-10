@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/geral/controle-videogame.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@300;400;600&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/autoria.css">
+    <title>AluraGeek | Login</title>
+</head>
+<body>
+    <header class="cabecalho container">
+        <a href="#" class="logo">
+            <img src="img/geral/controle-videogame.svg" class="logo__imagem" alt="controle videogame">
+            <p class="logo__alura">Alura<span class="logo__geek">Geek</span></p>
+        </a>
+        <div class="cabecalho__pesquisa">
+            <form action="POST" class="cabecalho__form">
+                <input type="text" class="cabecalho__entrada" placeholder="O que deseja encontrar?" required>
+                <button type="submit" class="cabecalho__pesquisar">
+                    <img src="img/geral/lupa.svg" alt="lupa" class="cabecalho__lupa">
+                </button>
+            </form>
+        </div>
+        <div class="cabecalho__logar">
+            <a href="index.html" class="cabecalho__login">Início</a>
+        </div>
+    </header>
+    <main>
+        <form action="POST" class="container login">
+            <fieldset class="login__conteudo">
+                <div class="login__item">
+                    <legend class="login__titulo">Iniciar Sessão</legend>
+                </div>
+                <div class="login__item">
+                    <input type="email" class="login__entrada" placeholder="Informe seu e-mail" required>
+                </div>
+                <div class="login__item">
+                    <input type="password" class="login__entrada" placeholder="Informe sua senha" required>
+                </div>
+                <div class="login__item">
+                    <button type="submit" class="login__botao">Entrar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <section class="container rodape">
+            <div class="rodape__logo-e-sobre">
+                <a href="#" class="logo">
+                    <img src="img/geral/controle-videogame.svg" class="logo__imagem" alt="controle videogame">
+                    <p class="logo__alura">Alura<span class="logo__geek">Geek</span></p>
+                </a>
+                <div class="sobre">
+                    <ul class="sobre__lista">
+                        <li class="sobre__item">
+                            <a href="#" class="sobre__link">Quem somos</a>
+                        </li>
+                        <li class="sobre__item">
+                            <a href="#" class="sobre__link">Política de privacidade</a> 
+                        </li>
+                        <li class="sobre__item">
+                            <a href="#" class="sobre__link">Programa fidelidade</a>
+                        </li>
+                        <li class="sobre__item">
+                            <a href="#" class="sobre__link">Nossas lojas</a>
+                        </li>
+                        <li class="sobre__item">
+                            <a href="#" class="sobre__link">Quero ser franquiado</a> 
+                        </li>
+                        <li class="sobre__item">
+                            <a href="#" class="sobre__link">Anuncie aqui</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contato">
+                <form action="POST" class="formulario">
+                    <fieldset class="formulario__componete">
+                        <legend class="formulario__titulo">Fale Conosco</legend>
+                        <div class="formulario__item">
+                            <label for="nome" class="formulario__descricao">Nome</label>
+                            <input id="nome" type="text" class="formulario__entrada" required>
+                        </div>
+                        <div class="formulario__item">
+                            <textarea class="formulario__entrada" placeholder="Escreva sua mensagem" name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
+                        </div>
+                        <input type="submit" value="Enviar mensagem" class="formulario__botao">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="autoria">
+            <p class="autoria__descricao">Desenvolvido por Lorrainy Moscon - 2023</p>
+        </section>
+    </footer>
+</body>
+</html>
